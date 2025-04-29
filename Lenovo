@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lenovo Laptop Shop</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+    nav {
+      background-color: #20232a;
+      color: white;
+      padding: 1em;
+      font-size: 1.2em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    .btn {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      margin-top: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .btn:hover {
+      background-color: #0056b3;
+    }
+    .reviews {
+      font-size: 0.9em;
+      color: #555;
+    }
+  </style>
+  <script>
+    let cartCount = 0;
+    function addToCart(button) {
+      cartCount++;
+      document.getElementById("cart-counter").innerText = cartCount;
+      alert("Item added to cart!");
+    }
+  </script>
+</head>
+<body>
+  <nav>
+    <div>Lenovo Laptop Store</div>
+    <div>Cart: <span id="cart-counter">0</span></div>
+  </nav>
+  <div class="container">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?auto=format&fit=crop&w=800&q=80" alt="ThinkPad X1 Carbon">
+      <h2>ThinkPad X1 Carbon</h2>
+      <p>Ultra-light 14” laptop with Intel i7, 16GB RAM, and 512GB SSD.</p>
+      <p><strong>$1,299</strong></p>
+      <p class="reviews">4.7 (320 reviews)</p>
+      <button class="btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1555617983-930b7683b57b?auto=format&fit=crop&w=800&q=80" alt="Legion 5 Pro">
+      <h2>Legion 5 Pro</h2>
+      <p>Gaming beast with RTX 3070, Ryzen 7, 1TB SSD.</p>
+      <p><strong>$1,499</strong></p>
+      <p class="reviews">4.8 (210 reviews)</p>
+      <button class="btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1587202372775-e4d7a32e9a9e?auto=format&fit=crop&w=800&q=80" alt="Yoga 9i">
+      <h2>Yoga 9i</h2>
+      <p>Convertible 2-in-1 with 4K touchscreen, i7, and 16GB RAM.</p>
+      <p><strong>$1,199</strong></p>
+      <p class="reviews">4.6 (180 reviews)</p>
+      <button class="btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1622460012306-d1d11c62242e?auto=format&fit=crop&w=800&q=80" alt="IdeaPad 3">
+      <h2>IdeaPad 3</h2>
+      <p>Affordable laptop with Intel i5, 8GB RAM, 256GB SSD.</p>
+      <p><strong>$549</strong></p>
+      <p class="reviews">4.3 (500 reviews)</p>
+      <button class="btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1593642532973-d31b6557fa68?auto=format&fit=crop&w=800&q=80" alt="ThinkBook 14s">
+      <h2>ThinkBook 14s</h2>
+      <p>Slim business laptop with fingerprint reader and i5 CPU.</p>
+      <p><strong>$899</strong></p>
+      <p class="reviews">4.5 (220 reviews)</p>
+      <button class="btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1611171711919-d54c6d7c8b9c?auto=format&fit=crop&w=800&q=80" alt="Chromebook Duet">
+      <h2>Chromebook Duet</h2>
+      <p>Compact 2-in-1 Chromebook with detachable keyboard.</p>
+      <p><strong>$299</strong></p>
+      <p class="reviews">4.2 (430 reviews)</p>
+      <button class="btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1611078489935-e1f04bfa2c27?auto=format&fit=crop&w=800&q=80" alt="ThinkPad E15">
+      <h2>ThinkPad E15</h2>
+      <p>Reliable business laptop with 16GB RAM and i5 CPU.</p>
+      <p><strong>$749</strong></p>
+      <p class="reviews">4.4 (300 reviews)</p>
+      <button class="btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1611186872310-6d2b4aaeea61?auto=format&fit=crop&w=800&q=80" alt="Legion Slim 7">
+      <h2>Legion Slim 7</h2>
+      <p>Slim gaming laptop with RTX 3060 and Ryzen 9.</p>
+      <p><strong>$1,599</strong></p>
+      <p class="reviews">4.9 (120 reviews)</p>
+      <button class="btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=800&q=80" alt="Yoga Slim 7">
+      <h2>Yoga Slim 7</h2>
+      <p>Lightweight performance laptop with QHD screen.</p>
+      <p><strong>$999</strong></p>
+      <p class="reviews">4.5 (290 reviews)</p>
+      <button class="btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1587206667853-99d3f5d8d132?auto=format&fit=crop&w=800&q=80" alt="ThinkPad T14">
+      <h2>ThinkPad T14</h2>
+      <p>Durable enterprise laptop with AMD Ryzen 5.</p>
+      <p><strong>$1,049</strong></p>
+      <p class="reviews">4.6 (160 reviews)</p>
+      <button class="btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+  </div>
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
+  <title>Lenovo Laptop Shop</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+    nav {
+      background-color: #20232a;
+      color: white;
+      padding: 1em;
+      font-size: 1.2em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    .btn {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      margin-top: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .btn:hover {
+      background-color: #0056b3;
+    }
+    .reviews {
+      font-size: 0.9em;
+      color: #555;
+    }
+  </style>
+  <script>
+    let cartCount = 0;
+    function addToCart(button) {
+      cartCount++;
+      document.getElementById("cart-counter").innerText = cartCount;
+      alert("Item added to cart!");
+    }
+  </script>
+</head>
+<body>
+  <nav>
+    <div>Lenovo Laptop Store</div>
+    <div>Cart: <span id="cart-counter">0</span></div>
+  </nav>
+  <div class="container">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?auto=format&fit=crop&w=800&q=80" alt="ThinkPad X1 Carbon">
+      <h2>ThinkPad X1 Carbon</h2>
+      <p>Ultra-light 14” laptop with Intel i7, 16GB RAM, and 512GB SSD.</p>
+      <p><strong>$1,299</strong></p>
+      <p class="reviews">4.7 (320 reviews)</p>
+      <button class="btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1555617983-930b7683b57b?auto=format&fit=crop&w=800&q=80" alt="Legion 5 Pro">
+      <h2>Legion 5 Pro</h2>
+      <p>Gaming beast with RTX 3070, Ryzen 7, 1TB SSD.</p>
+      <p><strong>$1,499</strong></p>
+      <p class="reviews">4.8 (210 reviews)</p>
+      <button class="btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1587202372775-e4d7a32e9a9e?auto=format&fit=crop&w=800&q=80" alt="Yoga 9i">
+      <h2>Yoga 9i</h2>
+      <p>Convertible 2-in-1 with 4K touchscreen, i7, and 16GB RAM.</p>
+      <p><strong>$1,199</strong></p>
+      <p class="reviews">4.6 (180 reviews)</p>
+      <button class="btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1622460012306-d1d11c62242e?auto=format&fit=crop&w=800&q=80" alt="IdeaPad 3">
+      <h2>IdeaPad 3</h2>
+      <p>Affordable laptop with Intel i5, 8GB RAM, 256GB SSD.</p>
+      <p><strong>$549</strong></p>
+      <p class="reviews">4.3 (500 reviews)</p>
+      <button class="btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1593642532973-d31b6557fa68?auto=format&fit=crop&w=800&q=80" alt="ThinkBook 14s">
+      <h2>ThinkBook 14s</h2>
+      <p>Slim business laptop with fingerprint reader and i5 CPU.</p>
+      <p><strong>$899</strong></p>
+      <p class="reviews">4.5 (220 reviews)</p>
+      <button class="btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1611171711919-d54c6d7c8b9c?auto=format&fit=crop&w=800&q=80" alt="Chromebook Duet">
+      <h2>Chromebook Duet</h2>
+      <p>Compact 2-in-1 Chromebook with detachable keyboard.</p>
+      <p><strong>$299</strong></p>
+      <p class="reviews">4.2 (430 reviews)</p>
+      <button class="btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1611078489935-e1f04bfa2c27?auto=format&fit=crop&w=800&q=80" alt="ThinkPad E15">
+      <h2>ThinkPad E15</h2>
+      <p>Reliable business laptop with 16GB RAM and i5 CPU.</p>
+      <p><strong>$749</strong></p>
+      <p class="reviews">4.4 (300 reviews)</p>
+      <button class="btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1611186872310-6d2b4aaeea61?auto=format&fit=crop&w=800&q=80" alt="Legion Slim 7">
+      <h2>Legion Slim 7</h2>
+      <p>Slim gaming laptop with RTX 3060 and Ryzen 9.</p>
+      <p><strong>$1,599</strong></p>
+      <p class="reviews">4.9 (120 reviews)</p>
+      <button class="btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=800&q=80" alt="Yoga Slim 7">
+      <h2>Yoga Slim 7</h2>
+      <p>Lightweight performance laptop with QHD screen.</p>
+      <p><strong>$999</strong></p>
+      <p class="reviews">4.5 (290 reviews)</p>
+      <button class="btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1587206667853-99d3f5d8d132?auto=format&fit=crop&w=800&q=80" alt="ThinkPad T14">
+      <h2>ThinkPad T14</h2>
+      <p>Durable enterprise laptop with AMD Ryzen 5.</p>
+      <p><strong>$1,049</strong></p>
+      <p class="reviews">4.6 (160 reviews)</p>
+      <button class="btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+  </div>
+</body>
+</html>
